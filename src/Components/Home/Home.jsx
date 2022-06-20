@@ -1,13 +1,16 @@
 import "./home.css";
-import img from "../props/img2.jpg";
-import Buttons from "../button/button";
-import { BsMouse } from "react-icons/bs";
+import img from "../../assets/logo.jpg";
 
 function Home() {
+  const sw_circle = () => {
+    const toggle = document.querySelector(".hover-show");
+    toggle.classList.toggle("active");
+  };
+
   return (
     <div id="home" className="container home-container">
       <div className="logo">
-        <div className="hover-show">
+        <div className="hover-show" onClick={sw_circle}>
           <span className="circle"></span>
           <span className="circle"></span>
           <span className="circle"></span>
@@ -20,24 +23,6 @@ function Home() {
 
         <img src={img} alt="" />
       </div>
-
-      <a href="#footer" className="scroll-down">
-        <hr />
-        <h5>scroll down</h5>
-        <BsMouse className="scroll" />
-        <hr />
-      </a>
-
-      <h2>
-        <span>About Me</span> <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id
-          quos deserunt, maxime sint sunt tempore quidem ad praesentium itaque,
-          aspernatur, magnam culpa iste adipisci?
-        </p>
-      </h2>
-
-      <Buttons />
     </div>
   );
 }
