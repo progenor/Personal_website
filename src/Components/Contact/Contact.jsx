@@ -12,7 +12,7 @@ function Contact() {
       <h1>Contact </h1>
       <div className="contact-links">
         <a
-          href="https://www.youtube.com/channel/UCzoBz4EKrLOvm3L4DDNc_pg"
+          href="mailto:our.biss0132@gmail.com"
           className="contact youtube"
           target={"blank"}
         >
@@ -23,7 +23,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://wa.link/bywzv3"
+          href="tel:+40757386289"
           className="contact whatsapp"
           target={"blank"}
         >
@@ -33,14 +33,17 @@ function Contact() {
           </h2>
         </a>
 
-        <a href="#" className="contact instagram">
+        <a
+          href="https://www.instagram.com/lorb0t/"
+          className="contact instagram"
+        >
           <RiInstagramLine className="icon" />
           <h2>
             Instagram <span>@lorb0t</span>
           </h2>
         </a>
 
-        <a href="#" className="contact instagram">
+        <a href="https://github.com/progenor" className="contact instagram">
           <AiFillGithub className="icon" />
           <h2>
             GitHub <span>progenor</span>
