@@ -5,7 +5,6 @@
   - insta
   - email
   - phone
-  - website contact
   - github
 
 - members
