@@ -34,7 +34,7 @@
 }
 
 .home-container .logo .hover-show.active {
-  animation: showspin 8s linear 1s infinite;
+  animation: showspin 9s linear 1s infinite;
 }
 
 @keyframes showspin {
@@ -65,53 +65,53 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  transform: translateY(-210%);
+  transform: translateY(-250%);
 }
 .home-container .logo .hover-show.active .circle:nth-child(2) {
   position: absolute;
-  transform: translateX(150%) translateY(-150%);
+  transform: translateX(175%) translateY(-175%);
   background: url(../../assets/props/css.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(3) {
   position: absolute;
-  transform: translateX(210%);
+  transform: translateX(250%);
   background: url(../../assets/props/js.jpg);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(4) {
   position: absolute;
-  transform: translateX(150%) translateY(150%);
+  transform: translateX(175%) translateY(175%);
   background: url(../../assets/props/bootstrap.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(5) {
   position: absolute;
-  transform: translateY(210%);
+  transform: translateY(250%);
   background: url(../../assets/props/react.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(6) {
   position: absolute;
-  transform: translateX(-150%) translateY(150%);
+  transform: translateX(-175%) translateY(175%);
   background: url(../../assets/props/kotlin.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(7) {
   position: absolute;
-  transform: translateX(-210%);
+  transform: translateX(-250%);
   background: url(../../assets/props/c-plus-plus.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(8) {
   position: absolute;
-  transform: translateX(-150%) translateY(-150%);
+  transform: translateX(-175%) translateY(-175%);
   background: url(../../assets/props/c-sharp.png);
   background-size: cover;
   background-position: center;
@@ -119,8 +119,8 @@
 
 .home-container img {
   position: absolute;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   border: 3px solid rgb(108, 161, 197);
   transform: translate(-200px);

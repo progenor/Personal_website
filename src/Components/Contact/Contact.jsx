@@ -1,23 +1,24 @@
 import "./contact.css";
 
 //icons
-import { AiOutlineYoutube } from "react-icons/ai";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { MdCall } from "react-icons/md";
+import { RiInstagramLine } from "react-icons/ri";
+import { AiFillGithub } from "react-icons/ai";
 
 function Contact() {
   return (
     <div id="contact" className="container contact-container">
-      <h1>Contact Me</h1>
+      <h1>Contact </h1>
       <div className="contact-links">
         <a
           href="https://www.youtube.com/channel/UCzoBz4EKrLOvm3L4DDNc_pg"
           className="contact youtube"
           target={"blank"}
         >
-          <AiOutlineYoutube className="icon" />
+          <MdOutlineMailOutline className="icon" />
           <h2>
-            youtube <span>Creative Ambition</span>
+            Email <span>our.biss0132@gmail.com</span>
           </h2>
         </a>
 
@@ -26,16 +27,23 @@ function Contact() {
           className="contact whatsapp"
           target={"blank"}
         >
-          <AiOutlineWhatsApp className="icon" />
+          <MdCall className="icon" />
           <h2>
-            whatsapp <span>+233 20 918 2598</span>
+            Call us <span>+40757 386 289</span>
           </h2>
         </a>
 
         <a href="#" className="contact instagram">
-          <AiOutlineInstagram className="icon" />
+          <RiInstagramLine className="icon" />
           <h2>
-            instagram <span>_Creative_Ambition_</span>
+            Instagram <span>@lorb0t</span>
+          </h2>
+        </a>
+
+        <a href="#" className="contact instagram">
+          <AiFillGithub className="icon" />
+          <h2>
+            GitHub <span>progenor</span>
           </h2>
         </a>
       </div>

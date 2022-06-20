@@ -1,29 +1,29 @@
 import "./nav.css";
 
 //icons
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { TiGroupOutline } from "react-icons/ti";
-import { BsArrowDownCircle } from "react-icons/bs";
-import { IoCallOutline } from "react-icons/io5";
+import { MdHome } from "react-icons/md";
+import { MdOutlinePersonSearch } from "react-icons/md";
+import { IoPeopleCircleOutline } from "react-icons/io5";
+import { BiTask } from "react-icons/bi";
+import { MdCall } from "react-icons/md";
 
 function Navbar() {
   return (
     <div className="navigation">
       <a href="#home">
-        <AiOutlineHome className="icon active-nav" />
+        <MdHome className="icon active-nav" />
       </a>
       <a href="#about">
-        <AiOutlineUser className="icon" />
+        <MdOutlinePersonSearch className="icon" />
       </a>
       <a href="#members">
-        <TiGroupOutline className="icon" />
+        <IoPeopleCircleOutline className="icon" />
       </a>
       <a href="#contact">
-        <IoCallOutline className="icon" />
+        <MdCall className="icon" />
       </a>
       <a href="#footer">
-        <BsArrowDownCircle className="icon" />
+        <BiTask className="icon" />
       </a>
     </div>
   );
