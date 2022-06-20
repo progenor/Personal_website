@@ -1,9 +1,11 @@
 import "./nav.css";
+
+//icons
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { TiGroupOutline } from "react-icons/ti";
-import { BiMessageRoundedDots } from "react-icons/bi";
 import { BsArrowDownCircle } from "react-icons/bs";
+import { IoCallOutline } from "react-icons/io5";
 
 function Navbar() {
   return (
@@ -18,7 +20,7 @@ function Navbar() {
         <TiGroupOutline className="icon" />
       </a>
       <a href="#contact">
-        <BiMessageRoundedDots className="icon" />
+        <IoCallOutline className="icon" />
       </a>
       <a href="#footer">
         <BsArrowDownCircle className="icon" />
