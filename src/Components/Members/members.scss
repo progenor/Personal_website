@@ -1,0 +1,43 @@
+.members-main {
+  display: flex;
+  flex-direction: row;
+  //   align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-top: 5%;
+
+  .line {
+    border: 1px solid rgb(0, 0, 99);
+    height: 50vh;
+    margin-top: 2rem;
+  }
+
+  .cont {
+    width: 40%;
+    height: fit-content;
+
+    padding: 2rem;
+
+    background-color: var(--box_bg_color);
+    border-radius: 30px;
+
+    .status {
+      margin: 5px 0 15px 0;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: "Open Sans";
+    }
+
+    img {
+      width: auto;
+      height: 30vh;
+
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
