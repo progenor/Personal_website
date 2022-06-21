@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: white;
+  color: #ffff;
   z-index: 1;
 }
 
@@ -70,6 +70,9 @@ body::after {
   --pc-width: 75%;
   --tab-width: 90%;
   --phone-width: 100%;
+
+  // mines
+  --box_bg_color: rgba(0, 0, 0, 0.322);
 }
 
 .container {

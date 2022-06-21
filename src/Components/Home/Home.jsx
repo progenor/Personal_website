@@ -6,7 +6,6 @@ function Home() {
     const toggle = document.querySelector(".hover-show");
     toggle.classList.toggle("active");
   };
-
   return (
     <div id="home" className="container home-container">
       <div className="logo">

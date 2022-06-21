@@ -17,5 +17,5 @@
   - logo
 
 - about
-  - job description
+  -
   -
