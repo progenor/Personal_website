@@ -1,11 +1,52 @@
-import React from "react";
+import { React, useEffect } from "react";
+
+//tools
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 //css
 import "./about.scss";
 
 const About = () => {
+  //animation scrolltriger
+
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  const mView = window.innerWidth < 740;
+
+  useEffect(() => {
+    if (inView && !mView) {
+      animation.start("visible");
+    } else {
+      animation.start("hidden");
+    }
+
+    if (mView) {
+      animation.start({ opacity: 1, x: 0 });
+    }
+  });
+
+  //animation variants
+  const apear = {
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+      },
+    },
+    hidden: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <div className="about-main">
+    <motion.div
+      className="about-main"
+      ref={ref}
+      variants={apear}
+      animate={animation}
+    >
       <h1>About</h1>
       <div className="about-container">
         <p>
@@ -30,7 +71,7 @@ const About = () => {
           laborum ullamco dolore culpa est enim in exercitation
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
