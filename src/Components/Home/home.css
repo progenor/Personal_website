@@ -193,7 +193,7 @@
     min-height: 100vh;
     padding: 150px 40px;
     margin-top: -10rem;
-    margin-bottom: -13rem;
+    margin-bottom: -9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,7 +279,7 @@
     min-height: 100vh;
     padding: 150px 30px;
     margin-top: -4.5rem;
-    margin-bottom: -13rem;
+    margin-bottom: -9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -376,7 +376,7 @@
     min-height: 100vh;
     padding: 150px 10px 0;
     margin-top: -12.3rem;
-    margin-bottom: -13rem;
+    margin-bottom: -6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,4 +463,18 @@
   -o-user-select: none;
   user-select: none;
   pointer-events: none;
+}
+
+.cl-me {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+
+  font-size: larger;
+  color: #fff;
+  background-color: rgba(61, 12, 111, 0.477);
+  padding: 7px;
+  border-radius: 10px 0;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
 }

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //stuff
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 //images
 import img1 from "../../assets/img/programer.jpg";
@@ -13,7 +13,22 @@ import "./members.scss";
 const Members = () => {
   //container animations trigger
 
-  //   const { ref, inView } = useInView();
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  const mView = window.innerWidth < 740;
+
+  useEffect(() => {
+    if (inView && !mView) {
+      animation.start("visible");
+    } else {
+      animation.start("hidden");
+    }
+
+    if (mView) {
+      animation.start({ opacity: 1, x: 0 });
+    }
+  });
 
   //  container animations
   const leftContainer = {
@@ -54,13 +69,15 @@ const Members = () => {
       },
     },
   };
+
+  // TODO: animate on scroll https://www.youtube.com/watch?v=hkhskSrT5SY
   return (
     <div className="members-main">
       <motion.div
         className="cont1 cont"
         variants={leftContainer}
-        initial="hidden"
-        animate="visible"
+        animate={animation}
+        ref={ref}
       >
         <h1>Lorbot</h1>
         <p className="status">CEO & Designer</p>
@@ -75,20 +92,22 @@ const Members = () => {
 
       {/* ############## LINE ##################### */}
 
-      <motion.div
-        className="line"
-        variants={line_fade}
-        initial="hidden"
-        animate="visible"
-      ></motion.div>
+      {!mView ? (
+        <motion.div
+          className="line"
+          variants={line_fade}
+          animate={animation}
+        ></motion.div>
+      ) : (
+        ""
+      )}
 
       {/* ############## LINE ##################### */}
 
       <motion.div
         className="cont2 cont"
         variants={rightContainer}
-        initial="hidden"
-        animate="visible"
+        animate={animation}
       >
         <h1>Progenor</h1>
         <p className="status">COO & Full Stack Developer</p>

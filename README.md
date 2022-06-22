@@ -16,6 +16,5 @@
   - image/anim
   - logo
 
-- about
-  -
+- ## about
   -
